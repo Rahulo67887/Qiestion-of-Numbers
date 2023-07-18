@@ -8,10 +8,12 @@ int fact(int num){
     }
     return fact;
 }
+
 int main(){
-    int n;
-    cout<<"Enter a number:";
-    cin>>n;
-    cout<<"Factorial of "<<n<<" is "<<fact(n)<<"."<<endl;
+    int n,r;
+    cin>>n>>r;
+
+    float ans=fact(n)/(fact(r)*fact(n-r));
+    cout<<ans<<endl;
     return 0;
 }
